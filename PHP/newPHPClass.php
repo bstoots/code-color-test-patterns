@@ -13,6 +13,8 @@ namespace Oh\Look\A\Ns {
     // For Earth anyway
     public static $gravity = 9.81;
 
+    public static $url = "https://lolololololololol.com";
+
     // Define a bunch of junk
     public    $someBool = true;
     public    $someInt = 123;
@@ -62,6 +64,15 @@ namespace Oh\Look\A\Ns {
     /**
      * 
      */
+    public function useHereDoc() {
+echo <<<HEREDOC
+FOOOOOOOOO
+HEREDOC;
+    }
+
+    /**
+     * 
+     */
     public function overrideMe() {
       $this->iterateSomeArray();
     }
@@ -79,7 +90,10 @@ namespace Oh\Look\A\Ns {
     }
     
     /**
-     * 
+     * @param string $string A string
+     * @param integer $int An integer
+     * @param newPHPClass $obj A newPHPClass object
+     * @return void
      */
     public function takeSomeArgs($string, $int, newPHPClass $obj) {
       var_dump($string, $int, $obj);

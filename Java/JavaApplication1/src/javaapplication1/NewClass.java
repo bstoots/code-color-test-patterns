@@ -19,6 +19,8 @@ public class NewClass extends AbstractClass implements NewInterface {
   // For Earth anyway
   public static Double gravity = 9.81;
 
+  public static String url = "https://lolololololololol.com";
+  
   // Define a bunch of junk
   public Boolean someBool = true;
   public Integer someInt = 123;
